@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS for background image -->
+    <style>
+        body {
+            background: url('{{ url_for('static', filename='eth5.jpg') }}') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .content-container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container content-container my-5">
+        <h1 class="text-center mb-4">Blockchain-based Electronic Voting System</h1>
+        <div class="list-group">
+            <!-- Corrected links using url_for -->
+            <a href="{{ url_for('register') }}" class="list-group-item list-group-item-action">Register</a>
+            <a href="{{ url_for('admin_login_page') }}" class="list-group-item list-group-item-action">Admin Home</a>
+            <a href="{{ url_for('user_login_page') }}" class="list-group-item list-group-item-action">User Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

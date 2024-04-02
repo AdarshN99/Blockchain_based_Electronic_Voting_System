@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Additional CSS if needed -->
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <style>
+        /* You can also put this in your external CSS file */
+        body {
+            background-image: url('../img/background.jpg');
+            background-size: cover; /* Cover the entire page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-attachment: fixed; /* Fixed background on scroll */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="head" class="text-center">
+        <h1 align="center" style="color: white;">Ethereum Blockchain based voting system</h1>
+        <br/>
+    </div>
+
+    <!-- Welcome Message Section -->
+    <div class="container mt-4">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <!-- Admin-specific content -->
+    </div>
+
+    <!-- Add Candidate Section -->
+    <div class="container mt-4">
+        <legend>Add Elections</legend>
+        <div class="container mt-4 text-center">
+            <a href="http://localhost:3000/newelection" class="btn btn-primary">Add</a>
+        </div>
+    </div>
+
+    <!-- Define Voting Dates Section -->
+   
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="../dist/app.bundle.js" type="module"></script>
+</body>
+</html>
